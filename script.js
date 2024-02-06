@@ -5,14 +5,14 @@ const chatInput = document.querySelector(".chat-input textarea");
 const sendChatBtn = document.querySelector(".chat-input span");
 
 let userMessage = null; // Variable to store user's message
-const API_KEY = ""; // Paste your API key here
+const API_KEY = "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"; // Paste your API key here
 const inputInitHeight = chatInput.scrollHeight;
 
 const createChatLi = (message, className) => {
     // Create a chat <li> element with passed message and className
     const chatLi = document.createElement("li");
     chatLi.classList.add("chat", `${className}`);
-    let chatContent = className === "outgoing" ? `<p></p> <span class="material-symbols-outlined">smart_toy</span>` : `<span class="material-symbols-outlined">smart_toy</span><p></p>`;
+    let chatContent = className === "outgoing" ? `<div class="me">Me</div><div class="chatbot_query"><p></p> <span class="material-symbols-outlined"><img src="person_icon.png"></span></div>` : ` <div class="name">Chatbot</div><div class="chatbot_response"><span class="material-symbols-outlined"><img src="chatbot_icon.svg"></span><p></p></div>`;
     chatLi.innerHTML = chatContent;
     chatLi.querySelector("p").textContent = message;
     return chatLi; // return chat <li> element
@@ -31,7 +31,7 @@ const generateResponse = (chatElement) => {
         },
         body: JSON.stringify({
             model: "gpt-3.5-turbo",
-            messages: [{role: "user", content: "Keep in mind to not suggest anything related to prohibited topics in the United Arab Emirates, such as LGBT, pornography, nudity, vice, impersonation, fraud, phishing, insult, slander, defamation, invasion of privacy, drugs, discrimination, racism, contempt of religion, malicious software, gambling, terrorism, or infringement of intellectual property rights. Only if I ask anything asked in the included list of topics, then reply with 'Unforuntately, your question is a prohited topic in United Arab Emirates, Feel free to ask me anything else that I could support you with' and not provide any further statements. If any topic i ask is not related to the prohibited topics, I would like you to share the answer without any sentences I provided earlier. Now, can you explain what is"+ userMessage}],
+            messages: [{role: "user", content: "Do not answer anything related to prohibited topics in the United Arab Emirates, such as LGBT, pornography, nudity, vice, impersonation, fraud, phishing, insult, slander, defamation, invasion of privacy, drugs, discrimination, racism, contempt of religion, malicious software, gambling, terrorism, or infringement of intellectual property rights. If anything is asked from the included list of topics, reply with 'Unforuntately, your question is a prohited topic in United Arab Emirates, Feel free to ask me anything else that I could support you with' and do not provide any further statements. If any topic asked is not related to the prohibited topics, proceed to answer. My question is"+ userMessage}],
         })
     }
 

@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<!-- Coding By CodingNepal - www.codingnepalweb.com -->
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Chatbot in JavaScript | CodingNepal</title>
+    <title>Chatbot POC</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google Fonts Link For Icons -->
@@ -13,30 +12,26 @@
   </head>
   <body>
     <button class="chatbot-toggler">
-      <!-- <span class="material-symbols-rounded">mode_comment</span> -->
-      <span class="material-symbols-rounded"><img src="../Chatbot/chatbot_toggler.svg" class="chatbot_toggler"></span>
+      <span class="material-symbols-rounded"><img src="chatbot_toggler.svg" class="chatbot_toggler"></span>
       <span class="material-symbols-outlined">close</span>
     </button>
     <div class="chatbot">
       <header>
-        <h2>Chatbot</h2>
+        <img src="chatbot_icon.svg">
         <span class="close-btn material-symbols-outlined">close</span>
       </header>
       <ul class="chatbox">
         <li class="chat incoming">
-        <!-- <div class="name">Chatbot</div> -->
-          <span class="material-symbols-outlined">smart_toy</span>
-          <!-- <div class="chatbot_response"> -->
-          <!-- <span class="material-symbols-outlined"><img src="../Chatbot/chatbot_icon.svg"></span> -->
+         <div class="name">Chatbot</div> 
+         <div class="chatbot_response"> 
+          <span class="material-symbols-outlined"><img src="chatbot_icon.svg"></span>
           <p>Hi there 👋<br>How can I help you today?</p>
-          <!-- <p>Hey there, how can I assist you ?</p> -->
-        <!-- </div> -->
+         </div> 
         </li>
       </ul>
       <div class="chat-input">
         <textarea placeholder="Type Your Message Here . . ." spellcheck="false" required></textarea>
-        <!-- <span id="send-btn" class="material-symbols-rounded">send</span> -->
-        <span id="send-btn" class="material-symbols-rounded"><img src="../Chatbot/send_btn.svg"></span>
+        <span id="send-btn" class="material-symbols-rounded"><img src="send_btn.svg"></span>
       </div>
     </div>
 
