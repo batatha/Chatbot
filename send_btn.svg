@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="Group_7880" data-name="Group 7880" transform="translate(-1418 -924)">
+    <path id="Rectangle_73" data-name="Rectangle 73" d="M1332,944a16,16,0,0,1,16-16h0a16,16,0,0,1,16,16h0a16,16,0,0,1-16,16h0a16,16,0,0,1-16-16Z" transform="translate(86 -4)" fill="#a12527"/>
+    <g id="Send" transform="translate(1424 930)">
+      <rect id="Background" width="20" height="20" transform="translate(0)" opacity="0"/>
+      <g id="Iconly_Bold_Send" data-name="Iconly/Bold/Send" transform="translate(1.666 1.667)">
+        <g id="Send-2" data-name="Send">
+          <path id="Vector" d="M1370.2,950.485a1.611,1.611,0,0,0-1.609-.419l-13.414,3.9a1.6,1.6,0,0,0-1.153,1.267,1.877,1.877,0,0,0,.835,1.752l4.194,2.578a1.087,1.087,0,0,0,1.341-.161l4.8-4.833a.611.611,0,0,1,.884,0,.635.635,0,0,1,0,.889l-4.811,4.833a1.1,1.1,0,0,0-.161,1.349l2.563,4.236a1.592,1.592,0,0,0,1.384.788,1.781,1.781,0,0,0,.209-.008,1.624,1.624,0,0,0,1.359-1.158l3.977-13.4A1.638,1.638,0,0,0,1370.2,950.485Z" transform="translate(-1354 -950)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

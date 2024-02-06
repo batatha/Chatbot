@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="134" height="134" viewBox="0 0 134 134">
+  <defs>
+    <filter id="Ellipse_1077" x="0" y="0" width="134" height="134" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_7877" data-name="Group 7877" transform="translate(-1377 -858)">
+    <g transform="matrix(1, 0, 0, 1, 1377, 858)" filter="url(#Ellipse_1077)">
+      <circle id="Ellipse_1077-2" data-name="Ellipse 1077" cx="58" cy="58" r="58" transform="translate(9 6)" fill="#fff"/>
+    </g>
+    <g id="Group_2" data-name="Group 2" transform="translate(1404 880)">
+      <path id="Rectangle_4424" data-name="Rectangle 4424" d="M11.825,0h39.16A29.563,29.563,0,0,1,80.547,29.563v0A29.563,29.563,0,0,1,50.985,59.125H11.825A11.825,11.825,0,0,1,0,47.3V11.825A11.825,11.825,0,0,1,11.825,0Z" transform="translate(0 15.775)" fill="#a12527"/>
+      <rect id="Rectangle_4425" data-name="Rectangle 4425" width="52.27" height="17.995" rx="8.997" transform="translate(12.853 26.915)" fill="#fff"/>
+      <circle id="Ellipse_1070" data-name="Ellipse 1070" cx="3.428" cy="3.428" r="3.428" transform="translate(20.565 32.913)" fill="#a12527"/>
+      <circle id="Ellipse_1071" data-name="Ellipse 1071" cx="3.428" cy="3.428" r="3.428" transform="translate(50.556 32.913)" fill="#a12527"/>
+      <path id="Polygon_7" data-name="Polygon 7" d="M5.57,0l5.57,10.283H0Z" transform="translate(58.268 83.469) rotate(180)" fill="#a12527"/>
+      <g id="Group_7224" data-name="Group 7224" transform="translate(35.9 0)">
+        <circle id="Ellipse_1072" data-name="Ellipse 1072" cx="5.164" cy="5.164" r="5.164" transform="translate(0)" fill="#a12527"/>
+        <path id="Path_22747" data-name="Path 22747" d="M-3066.005,2320c-.049,1.034,0,10.8,0,10.8" transform="translate(3071.191 -2314.836)" fill="#a12527" stroke="#a12527" stroke-width="2"/>
+      </g>
+      <text id="BETA" transform="translate(20.973 61.723)" fill="#fff" font-size="14" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">BETA</tspan></text>
+    </g>
+  </g>
+</svg>
