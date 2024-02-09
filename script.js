@@ -5,7 +5,7 @@ const chatInput = document.querySelector(".chat-input textarea");
 const sendChatBtn = document.querySelector(".chat-input span");
 
 let userMessage = null; // Variable to store user's message
-const API_KEY = "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"; // Paste your API key here
+const API_KEY = ""; // Paste your API key here
 const inputInitHeight = chatInput.scrollHeight;
 
 const createChatLi = (message, className) => {
@@ -31,7 +31,7 @@ const generateResponse = (chatElement) => {
         },
         body: JSON.stringify({
             model: "gpt-3.5-turbo",
-            messages: [{role: "user", content: "Do not answer anything related to prohibited topics in the United Arab Emirates, such as LGBT, pornography, nudity, vice, impersonation, fraud, phishing, insult, slander, defamation, invasion of privacy, drugs, discrimination, racism, contempt of religion, malicious software, gambling, terrorism, or infringement of intellectual property rights. If anything is asked from the included list of topics, reply with 'Unforuntately, your question is a prohited topic in United Arab Emirates, Feel free to ask me anything else that I could support you with' and do not provide any further statements. If any topic asked is not related to the prohibited topics, proceed to answer. My question is"+ userMessage}],
+            messages: [{role: "user", content: "Do not answer anything related to prohibited topics in the United Arab Emirates, such as LGBT, pornography, nudity, vice, impersonation, fraud, phishing, insult, slander, defamation, invasion of privacy, drugs, discrimination, racism, contempt of religion, malicious software, gambling, terrorism, or infringement of intellectual property rights. If anything is asked from the included list of topics, reply with 'Unforuntately, your question is a prohited topic in United Arab Emirates, Feel free to ask me anything else that I could support you with' and do not provide any further statements. If any topic asked is not related to the prohibited topics, proceed to answer. Allow positive greetings and answer questions related to https://tdra.gov.ae/en/FAQs only. If any other unrelated questions are asked, reply with 'Unfortunately, I'm unable to help you on this topic at the moment. Please try again later'. My question is"+ userMessage}],
         })
     }
 
