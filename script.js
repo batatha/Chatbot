@@ -5,16 +5,24 @@ const chatInput = document.querySelector(".chat-input textarea");
 const sendChatBtn = document.querySelector(".chat-input span");
 
 let userMessage = null; // Variable to store user's message
-const API_KEY = ""; // Paste your API key here
+const API_KEY = "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"; // Paste your API key here
 const inputInitHeight = chatInput.scrollHeight;
 
 const createChatLi = (message, className) => {
     // Create a chat <li> element with passed message and className
     const chatLi = document.createElement("li");
     chatLi.classList.add("chat", `${className}`);
-    let chatContent = className === "outgoing" ? `<div class="me">Me</div><div class="chatbot_query"><p></p> <span class="material-symbols-outlined"><img src="person_icon.png"></span></div>` : ` <div class="name">Chatbot</div><div class="chatbot_response"><span class="material-symbols-outlined"><img src="chatbot_icon.svg"></span><p></p></div>`;
+    let chatContent = className === "outgoing" ? `<div class="me">Me</div><div class="chatbot_query"><p></p> <span class="material-symbols-outlined"><img src="person_icon.png"></span></div>` : ` <div class="name">Chatbot</div><div class="chatbot_response"><span class="material-symbols-outlined"><img src="chatbot_icon.svg"></span><p><span class="wait"></span></p></div>`;
     chatLi.innerHTML = chatContent;
-    chatLi.querySelector("p").textContent = message;
+    if(message == "..."){
+        console.log(message);
+        console.log(chatLi.querySelector(".wait"));
+        chatLi.querySelector(".wait").classList.add("loader",`${className}`);
+    }
+    else{
+        chatLi.querySelector("p").textContent = message;
+
+    } 
     return chatLi; // return chat <li> element
 }
 
