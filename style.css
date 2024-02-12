@@ -245,7 +245,8 @@ header h2 {
 }
 
 .loader {
-  width: 10px;
+  width: 20px;
+  height: 20px !important;
   border-radius: 50%;
   display: block;
   margin: 15px;
@@ -259,14 +260,14 @@ header h2 {
 @keyframes shadowPulse {
   33% {
     background: #FFF;
-    box-shadow: -24px 0 #FF3D00, 24px 0 #FFF;
+    box-shadow: -24px 0 #A12527, 24px 0 #FFF;
   }
   66% {
-    background: #FF3D00;
+    background: #A12527;
     box-shadow: -24px 0 #FFF, 24px 0 #FFF;
   }
   100% {
     background: #FFF;
-    box-shadow: -24px 0 #FFF, 24px 0 #FF3D00;
+    box-shadow: -24px 0 #FFF, 24px 0 #A12527;
   }
 }
